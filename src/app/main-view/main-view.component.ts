@@ -10,10 +10,12 @@ import{ CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag
 })
 
 export class MainViewComponent implements OnInit {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 searchInput:any;
 datas:any;
-  constructor() { }
-
+ 
   board: Board = new Board('Open', [
     new Column('open', [
       "Maya Kanti",
@@ -51,9 +53,6 @@ datas:any;
     ])
     
   ]);
-
-  ngOnInit() {
-  }
 
   drop(event: CdkDragDrop<string[]>) {
     if (event.previousContainer === event.container) {
