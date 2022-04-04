@@ -9,7 +9,7 @@ export class SearchPipe implements PipeTransform {
         }
        searchInput = searchInput.toLowerCase();
        return languages.filter(
-           x =>x.toLowerCase().includes(searchInput)
+           x=>x.toLowerCase().includes(searchInput)
        )
      }
 }
