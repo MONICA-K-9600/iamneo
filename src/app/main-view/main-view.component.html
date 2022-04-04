@@ -18,34 +18,35 @@
     </div>
 
     <div class="board ">
-        <div class="board-bar ">
+        <div class="board-bar " style="background-color: #f8f5eb;">
             <div class="board-name ">
                 <img src="../../assets/icons8-suitcase-64.png " alt="icon" /> Jobs <img src=" ../../assets/icons8-chevron-right-30.png " alt="icon" class="arrow " style="width: 10px;height: 10px;" /> Full-stack Engineer
                 <button type="search " class="details " style="background-color: white;border-radius: 3px;margin: 10PX;padding: 5px;">View Job details</button>
             </div>
-            <div class="border-btns ">
-                <button class="canditate ">Add Canditates <img src=" ../../assets/icons8-expand-arrow-24.png " alt="icon" /></button> <button class="publish ">
+            <div class="border-btns " style="padding: 10px;background-color: #f8f5eb;
+            float: right;">
+                <button class="canditate ">Add Canditates <img src=" ../../assets/icons8-expand-arrow-24.png " alt="icon" /></button> <button class="publish " style="background-color: navy;color: white">
                 <img src="../../assets/icons8-paint-palette-50.png " alt="icon" >Published <img src="../../assets/icons8-expand-arrow-24.png " alt="icon" /></button>
             </div>
         </div>
         <div class="board-content ">All Canditates -
             <button class="sort " style="padding: 5px;background-color: #faf8f8;border: none;">Active (20) <img src="../../assets/icons8-expand-arrow-24.png " alt="icon"> </button>sort by
             <button class="sort " style="padding: 5px;background-color: #faf8f8;border: none">Last Updated <img src="../../assets/icons8-expand-arrow-24.png " alt="icon"></button>
-            <div class="board-model ">
+            <div class="board-model " style="float: right;padding: 5px;">
                 <img src="../../assets/icons8-menu-rounded-24.png " alt="icon" class="icons " style="margin: 10px;" />
                 <img src=" ../../assets/icons8-funnel-50.png " alt="icon" class="icons " style="margin: 10px;" />
                 <img src="../../assets/icons8-upload-48.png " alt="icon" class="icons " style="margin: 10px;" /> </div>
         </div>
     </div>
     <div class="board-wrapper ">
-        <div class="board-columns " cdkDropListGroup>
+        <div class="board-columns " style="display: flex;flex-grow: 1;" cdkDropListGroup>
             <div class="board-column " *ngFor="let column of board.columns ">
                 <div class="column-title ">
                     {{ column.name }}
                 </div>
-                <div class="tasks-container " cdkDropList [cdkDropListData]="column.tasks " (cdkDropListDropped)="drop($event) ">
+                <div class="tasks-container " styles="flex-grow: 1;overflow-y: auto;" cdkDropList [cdkDropListData]="column.tasks " (cdkDropListDropped)="drop($event) ">
                     <div class="task " *ngFor="let item of column.tasks " cdkDrag>
-                        <div class="task-name ">{{ item }} <img src="../../assets/icons8-users-settings-32.png " alt="icon">
+                        <div class="task-name " style="padding: 5px;color: blue;border-left: 4px solid #4CAF50;">{{ item }} <img src="../../assets/icons8-users-settings-32.png " alt="icon">
                         </div>
                         <div class="task-icon " style=" padding-top: 10px;"><img src="../../assets/icons8-menu-vertical-50.png " style="float:right " alt="icon"><img src="../../assets/icons8-user-30.png " style="float:right " alt="icon"> <img src="../../assets/icons8-star-48.png " alt="icon"><img src="../../assets/icons8-star-48.png "
                                 alt="icon">

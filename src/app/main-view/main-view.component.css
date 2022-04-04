@@ -36,30 +36,10 @@ button {
     min-height: 0;
 }
 
-.board-bar {
-    background-color: #f8f5eb;
-}
-
 .board-content {
     background-color: #faf8f8;
     padding: 10px;
     float: left;
-}
-
-.board-model {
-    float: right;
-    padding: 5px;
-}
-
-.border-btns {
-    padding: 10px;
-    background-color: #f8f5eb;
-    float: right;
-}
-
-.publish {
-    background-color: navy;
-    color: white
 }
 
 .board-name {
@@ -76,11 +56,6 @@ button {
     flex-grow: 1;
     overflow-x: auto;
     background-color: #faf8f8;
-}
-
-.board-columns {
-    display: flex;
-    flex-grow: 1;
 }
 
 .board-column {
@@ -103,11 +78,6 @@ button {
     background-color: white;
 }
 
-.tasks-container {
-    flex-grow: 1;
-    overflow-y: auto;
-}
-
 .task {
     display: flex;
     padding: 10px 10px;
@@ -117,12 +87,6 @@ button {
     margin-bottom: 15px;
     flex-direction: column;
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.05), 0 3px 14px 2px rgba(0, 0, 0, 0.05);
-}
-
-.task-name {
-    padding: 5px;
-    color: blue;
-    border-left: 4px solid #4CAF50;
 }
 
 .cdk-drag-preview {
