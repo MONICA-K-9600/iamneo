@@ -1,3 +1,10 @@
+button {
+    border-radius: 3px;
+    padding-bottom: 5px;
+    text-align: left;
+    margin-right: 10PX;
+}
+
 .root {
     display: flex;
     flex-direction: column;
@@ -42,10 +49,6 @@
 .board-model {
     float: right;
     padding: 5px;
-}
-
-.icons {
-    margin: 10px;
 }
 
 .border-btns {
@@ -139,11 +142,4 @@
 img {
     width: 20px;
     height: 20px;
-}
-
-button {
-    border-radius: 3px;
-    padding-bottom: 5px;
-    text-align: left;
-    margin-right: 10PX;
 }

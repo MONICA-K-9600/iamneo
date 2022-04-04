@@ -20,40 +20,28 @@ datas:any;
     new Column('open', [
       "Maya Kanti",
       "Bhima Kapila",
-      "Karthikeyan Reva"
-
-    ]),
+      "Karthikeyan Reva"]),
     new Column('Contacted', [
       "Bala Murali",
       "Kalyani Madhavi",
-      "Jayanti Kapila"
-     
-      
-    ]),
+      "Jayanti Kapila"]),
     new Column('written test', [
       "Mani Padmavati",
       "Indrani Gauri", 
       "Shiva Sita",
-      "Sunita Drupam"
-     
-    ]),
+      "Sunita Drupam"]),
     new Column('Technical Round', [
       "Shanta Indrani",
       "Gargi Vikrama",
       "Rameshvara Pankaja",
       "Girisha Baladeva",
-      "Mohana Vijaya"
-    ]),
+      "Mohana Vijaya" ]),
     new Column('Culture fit Round', [
       "Kartikeya Sita",
       "Jagadisha Gopinatha",
       "Saraswati Brahma",
-      "Lakshmana Madhav"
-
-    ])
-    
+      "Lakshmana Madhav"])
   ]);
-
   drop(event: CdkDragDrop<string[]>) {
     if (event.previousContainer === event.container) {
       moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
@@ -64,6 +52,4 @@ datas:any;
         event.currentIndex);
     }
   }
-
-
 }
