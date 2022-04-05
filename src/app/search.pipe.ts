@@ -4,12 +4,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class SearchPipe implements PipeTransform {
     transform(languages: string[], searchInput: string): any[]{     
-        if(!searchInput) {
-            return [];
-        }
+        if(!searchInput) { return [];  }
        searchInput = searchInput.toLowerCase();
-       return languages.filter(
-           x=>x.toLowerCase().includes(searchInput)
-       )
-     }
-}
+       return languages.filter(x=>x.toLowerCase().includes(searchInput))}}
